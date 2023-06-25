@@ -1,4 +1,4 @@
-function findCombinationsBruteForce(arr, target) {
+function findCombinations(arr, target) {
     let fistArray = [];
   
     for (let i = 0; i < arr.length; i++) {
@@ -29,13 +29,12 @@ function findCombinationsBruteForce(arr, target) {
 
 
 
-  // Sample input
   let arr = [1, 3, 2, 2, -4, -6, -2, 8];
   let target = 4;
   
-  // First combination for the target value
-  let fistArray = findCombinationsBruteForce(arr, target);
-//   console.log("First Combination For", target + ":", fistArray);
+
+  let fistArray = findCombinations(arr, target);
+
   
 // //   // Merge and sort the array
   let mergedArray = mergeAndSort(fistArray);
